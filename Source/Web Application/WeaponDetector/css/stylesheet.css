@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*Code Pen Table Code for Activity Logs*/
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+body {
+    font: 14px/1 'Open Sans', sans-serif;
+    color: #555;
+    background: #f5f5f5 ;
+
+    /*Code Pen Table Code for Activity Logs*/
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+}
+
+/*Code for Activity tab */
+table {
+    margin: 10px auto;
+}
+
+#activitytable{
+    height:550px;
+    overflow:auto;
+    display:block;
+}
+
+thead th {
+    font-weight: 600;
+    font-size: 15px;
+    background: #8a97a0;
+    color: #FFF;
+}
+
+tr {
+    background: #f4f7f8;
+    border-bottom: 1px solid #FFF;
+    margin-bottom: 5px;
+}
+
+tr:nth-child(even) {
+    background: #e8eeef;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    font-weight: 600;
+}
+
+tfoot tr {
+    background: none;
+}
+
+tfoot td {
+    padding: 10px 2px;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #8a97a0;
+}
+
+.export{
+    text-align: right;
+    margin-right: 40px;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+.Positive {
+    color: #e90000;
+}
+
+/*Code for Activity tab */
+
+h1 {
+    padding: 50px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+main {
+    min-width: 320px;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+label[for*='1']:before { content: '\f03d'; }
+label[for*='2']:before { content: '\f1da'; }
+label[for*='3']:before { content: '\f080'; }
+label[for*='4']:before { content: '\f1cd'; }
+
+label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+input:checked + label {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid orange;
+    border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+    display: block;
+}
+
+/* Code for monitor tab*/
+iframe {
+    width:496px;
+    height:279px;
+    display:block;
+    margin: 0 auto;
+}
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.foreground-text{
+    position:absolute;
+    top:5%;width:100%;text-align:center;
+    margin:0 auto;
+    color: #d7d7d7;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+/* Code for monitor tab*/
+
+/* Code for help tab*/
+.help{
+    padding-left: 30px;
+}
+
+.instructionslist{
+    padding-left: 30px;
+    font-size: 16px;
+}
+/* Code for help tab*/
+
+
+@media screen and (max-width: 650px) {
+    label {
+        font-size: 0;
+    }
+    label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    label {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weapon Detector</title>
+    <script src="js/angular.min.js"></script>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/login.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/loginStyleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body ng-app="login" ng-controller="loginController">
+<div id="navwrapper">
+    <div id="navbar">
+        <h1 class="logowrapper">Weapon Detection System</h1>
+    </div>
+</div>
+
+<div id="contentwrapper">
+    <div id="content">
+
+        <div id="leftbod">
+
+            <div class="connect bolder">
+                Computer Vision based, Real-time, Gun and Knife Detector</div>
+            <br/><br/>
+            <div class="leftbar">
+                <i class="fa fa-video-camera" aria-hidden="true" id="camicon"></i>
+                <div class="fb1">
+                    <span class="rowtext">View live-feed from the camera</span>
+                </div>
+            </div>
+
+            <div class="leftbar">
+                <i class="fa fa-history" aria-hidden="true" id="logsicon"></i>
+                <div class="fb1">
+                    <span class="rowtext">Detect the presence of a gun or a knife in real time</span>
+                </div>
+            </div>
+
+            <div class="leftbar">
+                <i class="fa fa-life-ring" aria-hidden="true" id="staticon"></i>
+                <div class="fb1">
+                    <span class="rowtext">Find more via statistical analysis</span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="rightbod">
+            <br/>
+            <br/>
+            <div class="signup bolder">Administrator Login</div>
+            <br/>
+            <div class="formbox">
+                <input type="text" class="inputbody in2" placeholder="username" ng-model="username">
+            </div>
+            <div class="formbox">
+                <input type="password" class="inputbody in2" placeholder="password" ng-model="password">
+            </div>
+            <div id="errorMessage">{{loginMessage}}</div>
+            <div class="formbox" id="signin">
+                <button type="submit" id="signinbut" class="signbut bolder" ng-click="login()">Sign In</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
