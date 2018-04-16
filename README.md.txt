@@ -50,3 +50,4 @@ REFERENCES
 1. Stack overflow: https://stackoverflow.com/
 2. Inception Model: https://tensorflow.rstudio.com/keras/reference/application_inception_v3.html
 3. Automated Detection of Firearms and Knives in a CCTV Image (Michal Grega,* Andrzej Matiolanski, Piotr Guzik, and Mikolaj Leszczuk): https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4732080/#B43-sensors-16-00047
+4. Tensorflow: https://www.tensorflow.org/api_docs/
